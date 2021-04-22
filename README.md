@@ -1,8 +1,8 @@
-# !!!Replace with your unique project name!!!
+# The Color pallete G.E.N.E.R.A.T.O.R
 
 ## Description
 
-!!!Replace with a description of what your program does!!!
+This program takes an input of how many colors a user wants to use for their color pallet thats greater than 2.
 
 ### v0.2 Updates
 
@@ -15,21 +15,30 @@
 
 ## Developer
 
-!!!Replace with your name!!!
+Phinease Francis
 
 ## Example
 
 To run the program, give the following commands:
 
 ```
-g++ --std=c++11 *.cpp -o cvp
-./cvp
+5
+bobby.css
 ```
 
 Here is an example of the program running:
 
 ```
-!!!Replace with an example of the program running with user interaction!!!
+How many colors do you need?
+Please enter a value that's 2 or greater.
+-2
+That value was less than 2
+Please enter a value that's 2 or greater.
+2
+You chose to have 2 colors in your pallet
+Please create a '.css' file name for your color pallete.
+bobby.css
+Your file name is: bobby.css
 ```
 
 ## C++ Guide
