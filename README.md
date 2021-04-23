@@ -22,54 +22,56 @@ Phinease Francis
 To run the program, give the following commands:
 
 ```
-5
-bobby.css
+2
+
 ```
 
 Here is an example of the program running:
 
 ```
 How many colors do you need?
-Please enter a value that's 2 or greater.
--2
-That value was less than 2
-Please enter a value that's 2 or greater.
+Please enter numarical value between 2-4 for your color count.
+1
+That value was less then 2.
+Please enter numarical value between 2-4 for your color count.
 2
 You chose to have 2 colors in your pallet
-Please create a '.css' file name for your color pallete.
-bobby.css
-Your file name is: bobby.css
+ 
+Please create a file name for your color pallete.
+color
+Your file name is: color.css
+Navy Blue
+Lemon yellow 
 ```
 
 ## C++ Guide
 
 ### Variables and Data Types
 
-!!!Replace with a summary and examples of how multiple variables have been used with a variety of data types and why they have been used effectively and appropriately!!!
+Appropriate variables as int and string were used to store users input and numarical values
 
 ### Console Input and Output
 
-!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!!
+simple interaction requesting for individual number of collers. Further displaying the users choice. Sadly there was no option to change choice after picking. 
 
 ### Decisions
 
-!!!Replace with a summary and examples of how multiple decision constructs have been used effectively and appropriately!!!
+Only one decision was implemented and that was to pick between a number 2-4. This decision was final for the file type.
 
 ### Iteration
-
-!!!Replace with a summary and examples of how iteration has been used effectively and appropriately!!!
+A do while loop was implmented .
 
 ### File Input and Output
 
-!!!Replace with a summary and examples of how input and/or output of files have been used effectively and appropriately!!!
+Opening file contain colors pre arranged were then input into the users own unique file. User had no choice of which color they would have.
 
 ### Arrays/Vectors
 
-*Coming in version 0.2*
+Vector holding whichColor choic was created to represent the different option presented after picking a number.
 
 ### Functions
 
-*Coming in version 0.2*
+a int function was used in pass by refrence.
 
 ### Classes
 
