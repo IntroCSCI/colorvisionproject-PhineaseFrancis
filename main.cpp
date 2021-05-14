@@ -1,43 +1,53 @@
-//Author: Phinease Francis 
+//Author: best dude in the world
 #include <iostream>
+#include "colorsall.h"
 #include<fstream>
 #include<vector>
 #include <ctime>
 #include <cstdlib>
 using namespace std;
-int  howManyColors(int& num);
-vector<int> whichColors(int&, string&);
 
 
 int main() {
-string name;
-string line;
+fstream myFile;
+string name="";
+string line="";
 int num; 
 
-
+colorsall data;
+void yourColors();
 
 
 
 cout<<"How many colors do you need?"<<endl;
 
-  num = howManyColors(num);
+
+
+data.howManyColors(num);
+
+
+
 
 cout<<" \n";
 cout<<"Please create a file name for your color pallete.\n";
 cin>>name;
 name= name+".css";
 cout<<"Your file name is: "<<name<<endl;
-
-fstream myFile (name);
-vector<int>colorsGenerated= whichColors(num, line);
+yourColors();
 
 
-myFile.open(name,ios::in|ios::out);
+myFile.open(name, ios::out);
+if (myFile.is_open()){
 
-myFile<<"Number of colors: "<<line;
+data.whichColors(num,line);
+
+myFile<<"Number of colors: "<<line<<endl;
 
 myFile.close();
-
+}
+else {
+  cout<<"Apologies! your file "<<name<<" could not be created.\n";
+}
 
 
 
@@ -46,61 +56,10 @@ return 0;
 
   }
 
-int howManyColors(int& num ){
- do{
-  cout<<"Please enter numarical value between 2-4 for your color count."<<endl;
-  cin>>num; 
-  if (num>=2){
-    cout<<"You chose to have " << num<<" colors in your pallet"<<endl;
-  }
-  else{
-    cout<<"That value was less then 2."<<endl;
 
-    }
- }while(num<2);
-    return num;
+void yourColors(){
+  cout<<"Congradulations! your colors are: \n";
 }
-
-vector<int> whichColors(int&num, string&line){
-
-  
-  if(num==2){
-ifstream myFile1("colors2.txt");
-if(myFile1.is_open()){
-  while(!myFile1.eof()){
-    getline(myFile1,line);
-    cout<<line<<endl;
-
-    } myFile1.close();
-  }
-}
-else if(num==3){
-  ifstream myFile1("colors3.txt");
-if(myFile1.is_open()){
-  while(!myFile1.eof()){
-    getline(myFile1,line);
-    cout<<line<<endl;
-
-    } myFile1.close();
-  }
-
-}
-
-else if(num==4){
-  ifstream myFile1("colors4.txt");
-    if(myFile1.is_open()){
-    while(!myFile1.eof()){
-    getline(myFile1,line);
-    cout<<line<<endl;
-
-      } myFile1.close();
-  }
-}
- 
-}
-
-
-
 
 
 

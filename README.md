@@ -6,11 +6,11 @@ This program takes an input of how many colors a user wants to use for their col
 
 ### v0.2 Updates
 
-*Coming soon*
+Now able to to call on multiple file for colors
 
 ### v1.0 Updates
 
-*Coming soon*
+program can now properly create files while also fixing minor bugs. The use of classes and object were created and were stored on seperate file locations. You will also recieve an error if a file was not working, but sadly you would neeed to restart the program when this happens.
 
 
 ## Developer
@@ -23,6 +23,8 @@ To run the program, give the following commands:
 
 ```
 2
+3
+4
 
 ```
 
@@ -71,8 +73,8 @@ Vector holding whichColor choic was created to represent the different option pr
 
 ### Functions
 
-a int function was used in pass by refrence.
+a int function was used in pass by refrence. void function and was also included.
 
 ### Classes
 
-*Coming in version 1.0*
+Moved current functions avaliable into the the new classes. These new folders are called colorsall.cpp and colorsall.h
