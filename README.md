@@ -2,11 +2,11 @@
 
 ## Description
 
-This program takes an input of how many colors a user wants to use for their color pallet thats greater than 2.
+This program takes an input of how many colors a user wants to use for their color pallet thats greater than 2 but less than 4.
 
 ### v0.2 Updates
 
-Now able to to call on multiple file for colors
+Now able to to call at least 3 files for color variations 
 
 ### v1.0 Updates
 
@@ -50,7 +50,7 @@ Lemon yellow
 
 ### Variables and Data Types
 
-Appropriate variables as int and string were used to store users input and numarical values
+Only 2 string variable, [name] and [line], are used to save the users response input. Integer variable was created to store the number of files the user wished to generate.
 
 ### Console Input and Output
 
@@ -61,7 +61,7 @@ simple interaction requesting for individual number of collers. Further displayi
 Only one decision was implemented and that was to pick between a number 2-4. This decision was final for the file type.
 
 ### Iteration
-A do while loop was implmented .
+A do while loop was created to prevent the user from intering a number less then 2. But doesnt seem to correctly stop the user from creating a file that is greater then 5.
 
 ### File Input and Output
 
@@ -69,12 +69,14 @@ Opening file contain colors pre arranged were then input into the users own uniq
 
 ### Arrays/Vectors
 
-Vector holding whichColor choic was created to represent the different option presented after picking a number.
+Vector named [whichColor]  was created to open different file color files based on [num] input from the user.
 
 ### Functions
 
-a int function was used in pass by refrence. void function and was also included.
+Existing functions were moved to ".cpp" file under the class. a void function was created to also congradualte the user for their color. 
 
 ### Classes
 
-Moved current functions avaliable into the the new classes. These new folders are called colorsall.cpp and colorsall.h
+A class was created called [colorall] that used both public and private. 
+
+(classes more on my classes!!)
